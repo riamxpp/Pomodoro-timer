@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Pomodo timer</h2>
+  <div class="promodo-timer">
+    <div class="sessao">
+      <p data-sessao="pausa">Sessão</p>
+      <p class="timer">25:00</p>
+      <button data-iniciar> ▶ Iniciar</button>
+      <button data-pausar>◼ Pausar</button>
+      <button data-resetar>Resetar</button>
+    </div>
+    <div class="config-sessao">
+      <div>
+        <p>Tamanho da sessão</p>
+        <button data-aumentar="sessao">▲</button>
+        <span class="tempo-sessao">25m</span>
+        <button data-diminuir="sessao">▼</button>
+      </div>
+      <div>
+        <p>Tamanho da pausa</p>
+        <button data-aumentar="pausa">▲</button>
+        <span class="tempo-pausa">10m</span>
+        <button data-diminuir="pausa">▼</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
